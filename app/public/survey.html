@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Friend Finder | Survey</title>
+        <!-- bootstrap CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!-- Font Awesome Glyphicons -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+
+
+    </head>
+    
+    <body>
+        <div class = "container">
+            <h2><strong>Survey Questions</strong></h2>
+            <hr>
+            <h3><strong>About You</strong></h3>
+            <form>
+                <div class="form-group">
+                  <label for="name">Name (Required)</label>
+                  <input type="name" class="form-control" id="name" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label for="photo">Link to Photo Image (Required)</label>
+                    <input type="photo" class="form-control" id="photo">
+                  </div>
+                <hr>
+                <!-- Question 1-->
+                <div class="form-group">
+                    <h4><strong>Question 1</strong></h4>
+                    <label for="q1">How much to you like honey?</label>
+                    <select class="form-control" id="q1"> 
+                      <option value = 1>1 Strongly Disagree</option>
+                      <option value = 2>2</option>
+                      <option value = 3>3</option>
+                      <option value = 4>4</option>
+                      <option value = 5>5 Strongly Agree</option>
+                    </select>
+                </div>
+                <!-- Question 2-->
+                <div class="form-group">
+                        <h4><strong>Question 2</strong></h4>
+                        <label for="q2">How many times have you been stung by a bee?</label>
+                        <select class="form-control" id="q2">
+                          <option value = 1>1 Strongly Disagree</option>
+                          <option value = 2>2</option>
+                          <option value = 3>3</option>
+                          <option value = 4>4</option>
+                          <option value = 5>5 Strongly Agree</option>
+                        </select>
+                    </div>
+                <!-- Question 3-->
+                <div class="form-group">
+                        <h4><strong>Question 3</strong></h4>
+                        <label for="q3">Do you live in a hollow tree?</label>
+                        <select class="form-control" id="q3">
+                          <option value = 1>1 Strongly Disagree</option>
+                          <option value = 2>2</option>
+                          <option value = 3>3</option>
+                          <option value = 4>4</option>
+                          <option value = 5>5 Strongly Agree</option>
+                        </select>
+                    </div>
+
+                <button id ="submit" type="submit" class="btn btn-primary">Submit</button>
+              </form>
+              <hr>
+              <footer class="footer">
+                <div class="container">
+                  <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/Pretzels121609/Friend_Finder">GitHub Repo</a></p>
+                </div>
+              </footer>
+              <div class="modal" id="resultsModal" role="dialog">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Best Match</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <h2 id="match-name"></h2>
+                            <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+        
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      
+        <!-- Latest compiled and minified CSS & JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="/assets/js/survey.js"></script>
+    </body>
+
+</html>

@@ -24,7 +24,7 @@ var friendsArray = [
     {
       Name: "Eeyore",
       photo: "https://www.disneyclips.com/imagesnewb/images/clipeeyore2.gif" ,
-      score: [1, 2, 3, 4, 5, 4, 3, 2, 1, 5]
+      score: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
     },
     {
       Name: "Roo",
